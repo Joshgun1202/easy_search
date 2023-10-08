@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Ýeňil gözleg",
+  "description": "extension",
+  "author": "Dayanch",
+  "icons":{
+    "128":"./icons/1.png",
+    "48":"./icons/1.png",
+    "32":"./icons/1.png",
+    "16":"./icons/1.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "extension"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [],
+      "js": [
+        "jquery.js",
+        "particles.js",
+        "app.js",
+        "main.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.google.com/search*"
+      ],
+      "css": ["gb_hide.css"],
+      "js": []
+    }
+  ]
+}

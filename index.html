@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ýeňil gözleg</title>
+  <meta charset="utf-8">
+  <link rel="manifest" href="data:application/manifest+json">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 25px;
+      font-family: Arial, sans-serif;
+      background: #1f1f2e;
+    }
+
+    #particles-js {
+      position: fixed;
+      z-index: -9999;
+
+      width: 100vw;
+      height: 100vh;
+    }
+
+    h1 {
+      color: whitesmoke;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    form {
+      margin-top: 5px;
+      background: transparent;
+      display: inline;
+    }
+
+    .inputBox {
+      position: relative;
+    }
+
+    input[type="text"] {
+      background: transparent;
+      outline: none;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      width: 300px;
+      color: #fff;
+      font-size: 1em;
+      height: 23px;
+
+    }
+
+    .inputBox span {
+      position: absolute;
+      left: 0;
+      padding: 16px;
+      pointer-events: none;
+      font-size: 1em;
+      color: rgba(255, 255, 255, 1);
+      transition: 0.5s;
+      text-transform: uppercase;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span {
+      color: white;
+      transform: translateX(10px) translateY(-7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #1f1f2e;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+
+    }
+
+    input[type="button"] {
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      position: relative;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      margin-top: 5px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="button"]:hover {
+      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 1);
+      color: #333;
+      transition: 1s;
+
+    }
+    .box{
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #1f1f2e ;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: 0.8s;
+  }
+  
+  .box:hover input{
+    width: 280px;
+  }
+  .box:hover {
+    width: 280px;
+
+  }
+
+  .box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <h1 style="font-size: 30px;">Ýeňil gözleg</h1>
+  <h1>Esasy gözleg söz</h1>
+  <form target="_blank" action="https://www.google.com/search" method="get">
+    <div class="inputBox">
+      <input type="text" name="q1" class="searchInput" required="required">
+      <span>Gözleg...</span>
+    </div>
+    <input type="button" value="GÖZLEG">
+    <h1>Faýlyň giňeltmesine görä</h1>
+    <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q2" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>URL salgysy boýunça</h1>
+   <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q3" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>Web saýdyň teksti boýunça</h1>
+    <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q4" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>Web saýdyň sözbaşy boýunça</h1>
+    <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q5" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>Saýtlar boýunça</h1>
+   <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q6" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>Karta boýunça</h1>
+    <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q7" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>Baglanyşyklar boýunça</h1>
+    <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q8" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+    <h1>Sene boýunça</h1>
+    <div class="box">
+    <input type="text" placeholder="Gözleg..." name="q9" class="searchInput">
+    <i style="font-size:30px; transition: 0.8s;" class="fas fa-search"></i>
+  </div>
+  </form>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
